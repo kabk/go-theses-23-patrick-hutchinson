@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Cheltenham";
+    src: url('mat/font/CheltenhamITCPro-Book.otf');
+    font-style: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    /*    max-height: 100vh;*/
+
+    overflow-x: hidden;
+
+    background: #262626;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    padding-top: 40px;
+    font-size: 4vw;
+    font-weight: 100;
+    color: #fff;
+    top: 0;
+    margin-left: 10px;
+    line-height: 1vw;
+}
+
+p {
+    position: relative;
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    width: 85vw;
+}
+
+figure {
+    margin: 10px;
+    margin-right: -5px;
+    color: #fff;
+    position: relative;
+    display: inline-table;
+    /*    max-width: 400px;*/
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    margin-top: 5px;
+    /*    max-width: 350px;*/
+}
+
+#imgcontainer {
+    position: absolute;
+    bottom: 30px;
+}
+
+img {
+    position: relative;
+    height: 400px;
+    width: auto;
+}
+
+img:hover {
+    filter: invert();
+    transition: 0.2s;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+    max-width: 500px;
+
+
+}
+
+.style_1 {
+    /*    font-family: arial;*/
+    background: #FFFFFF;
+    color: rgb(18, 18, 18);
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.style_2 {
+    color: #7D7D7D;
+    font-family: arial;
+}
+
+.style_3 {
+    font-size: 1.1em;
+    font-style: italic;
+    /*    background: #C20017;*/
+}
+
+.style_4 {
+    /*    font-size: 1.1em;*/
+    font-style: italic;
+    background: #393939;
+    max-width: 380px;
+}
+
+.style_5 {
+    /*    font-size: 1.1em;*/
+    text-align: justify;
+    /*    text-justify: inter-character;*/
+    width: 50%;
+}
+
+h5 {
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+    left: 10px;
+}
+
+
+/*rescaling for Mobile Versions*/
+@media only screen and (max-device-width: 802px) {
+    body {
+        font-size: 6vw;
+    }
+}
