@@ -315,7 +315,7 @@ li {
 }
 
 .chapterTitle:hover {
-    color: #bfbfbf;
+    color: var(--main-font-color) !important;
     transition: .2s;
     transition-property: color;
 }
@@ -517,6 +517,8 @@ figcaption {
 
 .footnoteItem:hover {
     cursor: pointer;
+    -webkit-text-stroke: var(--main-font-color) 1.02px;
+    color: var(--main-font-color);
 }
 
 .footnoteItem.highlighted {
@@ -594,17 +596,16 @@ p:nth-child(1) {
     cursor: pointer;
     transition-property: color, opacity;
     display: block;
-
 }
 
-/*
 .definitionsListItem:hover {
-    color: #bfbfbf;
+    color: var(--main-font-color);
+    -webkit-text-stroke: var(--main-font-color) 1.02px;
 }
-*/
 
 .definitionsListItem.highlighted {
-    color: #bfbfbf;
+    color: var(--main-font-color);
+    -webkit-text-stroke: var(--main-font-color) 1.02px;
 }
 
 .panel {
@@ -643,9 +644,11 @@ p:nth-child(1) {
     cursor: pointer;
 }
 
+/*
 .subheadline.mobile {
     display: none;
 }
+*/
 
 .footerfootnotes {
 
@@ -703,13 +706,19 @@ p:nth-child(1) {
     display: table;
 }
 
+.mobile {
+    display: none;
+}
+
+
+
 
 
 
 
 
 /*rescaling for Mobile Versions*/
-@media only screen and (max-device-width: 602px) {
+@media (max-width: 602px) {
     body {
         font-size: 5vw;
         line-height: 1.1;
@@ -740,12 +749,8 @@ p:nth-child(1) {
         line-height: 7vw;
     }
 
-    .definitionsColumn.desktop {
-        display: none;
-    }
 
-    .definitionsColumn.mobile {
-        display: block;
+    .definitionsColumn {
         opacity: 1;
         color: var(--main-font-color);
         position: relative;
@@ -763,12 +768,15 @@ p:nth-child(1) {
         position: absolute;
     }
 
-    ul.chapterColumn.desktop {
+    .desktop {
         display: none;
     }
 
-    ul.chapterColumn.mobile {
+    .mobile {
         display: block;
+    }
+
+    .chapterColumn {
         height: var(--main-text-size);
         text-align: justify;
         left: 50%;
@@ -778,7 +786,6 @@ p:nth-child(1) {
         overflow-y: hidden;
         text-align: center;
 
-        display: flex;
         align-items: stretch;
         /* Default */
         justify-content: space-between;
@@ -827,12 +834,7 @@ p:nth-child(1) {
         line-height: 1;
     }
 
-    .footnotesColumn.desktop {
-        display: none;
-    }
-
-    .footnotesColumn.mobile {
-        display: block;
+    .footnotesColumn {
         opacity: 1;
         height: auto;
         position: relative;
@@ -865,9 +867,6 @@ p:nth-child(1) {
         line-height: 1;
     }
 
-    .subheadline.mobile {
-        display: block;
-    }
 
     .footeritem {
         position: absolute;
@@ -895,11 +894,4 @@ p:nth-child(1) {
         display: none;
     }
 
-}
-
-
-@media only screen and (min-device-width: 802px) {
-    .definitionsColumn.mobile {
-        display: none;
-    }
 }
