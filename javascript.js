@@ -9,6 +9,10 @@ window.addEventListener("load", function () {
     } else {
         mobile = false;
     }
+
+    if (mobile) {
+        document.querySelector("#gridcontainer").style.height = `${(window.innerHeight / 100)*79}px`
+    }
 });
 
 window.addEventListener("resize", function () {
@@ -19,13 +23,6 @@ window.addEventListener("resize", function () {
     }
 });
 
-//window.addEventListener("click", function () {
-//    if (window.innerWidth < 602) {
-//        mobile = true;
-//    } else {
-//        mobile = false;
-//    }
-//})
 
 
 

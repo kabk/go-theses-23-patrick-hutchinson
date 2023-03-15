@@ -903,13 +903,13 @@ p:nth-child(1) {
     }
 
     .footerfootnotes {
-        left: 10px;
+        left: 15px;
         bottom: 10px;
         opacity: 1 !important;
     }
 
     .footerdefinitions {
-        right: 10px;
+        right: 15px;
         bottom: 10px;
         opacity: 1 !important;
     }
