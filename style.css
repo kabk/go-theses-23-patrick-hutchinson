@@ -241,7 +241,7 @@ h1#headline.greyred {
 }
 
 .explanationText {
-/*    display: none;*/
+    /*    display: none;*/
     opacity: 0;
     transition-property: opacity;
     transition: 0.4s;
@@ -604,12 +604,12 @@ p:nth-child(1) {
 
 .definitionsListItem:hover {
     color: var(--main-font-color);
-/*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
+    /*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
 }
 
 .definitionsListItem.highlighted {
     color: var(--main-font-color);
-/*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
+    /*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
 }
 
 .panel {
@@ -790,7 +790,13 @@ p:nth-child(1) {
         display: block;
     }
 
-    .chapterColumn {
+    /*
+    chapterColumn.mobile {
+        display: block;
+    }
+*/
+
+    ul.chapterColumn.mobile {
         height: var(--main-text-size);
         text-align: justify;
         left: 50%;
@@ -804,7 +810,9 @@ p:nth-child(1) {
         /* Default */
         justify-content: space-between;
         width: calc(100vw - 0px);
+        display: flex;
     }
+
 
     li.chapterItem {
         margin-bottom: 40px;
