@@ -67,6 +67,20 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #bfbfbf
+}
+
+a.footnote-ref:visited {
+    color: var(--main-font-color);
+    -webkit-text-stroke: var(--main-font-color) 1.02px;
+}
+
+a.footnote-marker:visited {
+    color: var(--main-font-color);
+    -webkit-text-stroke: var(--main-font-color) 1.02px;
+}
+
 sup {
     font-size: 12px;
     vertical-align: baseline;
@@ -74,9 +88,6 @@ sup {
     top: -0.4em;
 }
 
-a:visited {
-    color: #bfbfbf
-}
 
 .openconsole {
     width: 100vw;

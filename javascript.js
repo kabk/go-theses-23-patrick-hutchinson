@@ -1,6 +1,11 @@
+//MEDIA PIRACY, Thesis START
+
+//DO LIST:
+//—
+
+
+
 let mobile = "";
-
-
 
 //initally set the mobile variable
 window.addEventListener("load", function () {
@@ -23,7 +28,6 @@ window.addEventListener("resize", function () {
         mobile = false;
     }
 });
-
 
 
 
@@ -107,21 +111,17 @@ setInterval(function () {
 
 
 
+
 document.querySelector('.explainButton').addEventListener('click', function () {
     if (!mobile) {
         document.querySelector('.explanationText').classList.toggle("visible");
-        //        document.querySelector('.explanationFooter').classList.toggle("visible");
-        //        document.querySelector('#console').className = "";
-        //        document.querySelector('#console').classList.toggle("foreground");
-        //        document.querySelector('h1#headline').className = "";
-        //        document.querySelector('h1#headline').classList.toggle("foreground");
     }
 });
 
 
 
+
 //Show Defintion Column on Hover
-//>>> it could be that an if(!mobile) needs to be added after the eventlistener
 document.querySelector(".definitionsColumn").addEventListener('mouseenter', function () {
     if (!mobile) {
         document.querySelector(".definitionsColumn").style.opacity = "1";
@@ -132,6 +132,7 @@ document.querySelector(".definitionsColumn").addEventListener('mouseleave', func
         document.querySelector(".definitionsColumn").style.opacity = "0";
     }
 });
+
 
 
 
@@ -218,7 +219,6 @@ for (j = 0; j < acc.length; j++) {
 
 
 //Footnote Highlighting Functionality
-
 document.querySelectorAll('.footnote-marker').forEach(function (footnoteMarker) {
     footnoteMarker.addEventListener("mouseenter", function () {
         if (!mobile) {
@@ -297,6 +297,8 @@ document.querySelectorAll('.footnoteItem').forEach(function (footnoteItem) {
 })
 
 
+
+
 //Chapter ScrollTo Functionality
 document.querySelectorAll('.chapterItem').forEach(function (chapterItems) {
     chapterItems.addEventListener('click', function () {
@@ -310,6 +312,8 @@ document.querySelectorAll('.chapterItem').forEach(function (chapterItems) {
         })
     })
 })
+
+
 
 
 //Change style when a new chapter is reached
@@ -361,7 +365,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED DEFAULT COLORING.";
     }
 
-
+    //CHAPTER "CULTURE DIGITAL"
     if (chapterCounter == 0.5) {
         currentColor = "greyred";
         currentTextColor = "#DA212C";
@@ -382,7 +386,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED RED COLORING.";
     }
 
-
+    //CHAPTER "LEGALITIES"
     if (chapterCounter == 1) {
         currentColor = "grey";
         currentTextColor = "#fffffa";
@@ -402,6 +406,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
     }
 
 
+    //CHAPTER "ARTISTIC THOUGHTS IN PLAGIARISM AND REPRODUCTION"
     if (chapterCounter == 2) {
         currentColor = "red";
         currentTextColor = "#00000e";
@@ -419,7 +424,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED RED COLORING.";
     }
 
-
+    //CHAPTER INTERNET NON-LAW
     if (chapterCounter == 3) {
         currentColor = "grey";
         currentTextColor = "#fffffa";
@@ -437,7 +442,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED GREY COLORING.";
     }
 
-
+    //BREAK: THOUGHTS ON LABELLING YOUR BELONGINGS
     if (chapterCounter == 4) {
         currentColor = "yellow";
         currentTextColor = "#f6fb40";
@@ -455,7 +460,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED NEON COLORING.";
     }
 
-
+    //CHAPTER HACKING, FIXING AND MAINTAINTING A 70's FISHER PRICE TOY
     if (chapterCounter == 5) {
         currentColor = "blue";
         currentTextColor = "#fff";
@@ -473,7 +478,7 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED <TWIITER> COLORING.";
     }
 
-
+    //CHAPTER REFRAMING INTERNET COPYRIGHT
     if (chapterCounter == 6) {
         currentColor = "grey";
         currentTextColor = "#fff";
@@ -491,6 +496,8 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector('.consoleText').textContent = ">APPLIED GREY COLORING.";
     }
 });
+
+
 
 
 //Show FootnotesColumn When Hovered (Backup for CSS)
@@ -554,41 +561,10 @@ document.querySelector(".footerdefinitions").addEventListener("click", function 
     });
 })
 
-//
-//    document.querySelector("body").addEventListener("mousemove", function () {
-//        var rect = event.currentTarget.getBoundingClientRect();
-//        var x = event.clientX - rect.left;
-//        var y = event.clientY - rect.top;
-//        if (y < 10) {
-//            document.querySelector(".openconsole").style.height = "5vh";
-//        } else {
-//            document.querySelector(".openconsole").style.height = "0vh";
-//        }
-//
-//
-//        if (document.querySelector(".placeholder").style.height == "100vh" && y > (window.innerHeight) - 50) {
-//            document.querySelector(".placeholder").style.height = "0vh";
-//            document.querySelector("#console").className = "";
-//            document.querySelector("#console").classList.toggle(currentColor);
-//            document.querySelector("h1#headline").className = "";
-//            document.querySelector("h1#headline").classList.toggle(currentColor);
-//            document.querySelector(".openconsole").style.background = "#000";
-//            document.querySelector("#gridcontainer").classList = "";
-//        }
-//    })
-//
-//    document.querySelector(".openconsole").addEventListener("click", function () {
-//        this.style.background = "transparent";
-//        document.querySelector(".placeholder").style.height = "100vh";
-//        document.querySelector(".placeholder").style.transition = "0.5s";
-//        document.querySelector("#console").className = "";
-//        document.querySelector("#console").classList.toggle("foreground");
-//        document.querySelector("h1#headline").className = "";
-//        document.querySelector("h1#headline").classList.toggle("foreground");
-//
-//        document.querySelector("#gridcontainer").classList.toggle(currentColor);
-//    })
-//
+
+
+
+//scroll to footnotes, and color them accordingly 
 document.querySelectorAll(".footnote-ref").forEach(function (inTextFootnoteRef) {
     inTextFootnoteRef.addEventListener("click", function () {
         console.log(inTextFootnoteRef.getAttribute("href").slice(1));
@@ -630,6 +606,10 @@ document.querySelectorAll(".footnoteReference").forEach(function (fullReferenceI
     })
 });
 
+
+
+
+//show console on 1uestionmark click
 document.querySelector(".questionMark").addEventListener("click", function () {
     document.querySelector(".placeholder").style.transition = "background 2s, height 0.5s";
     document.querySelector(".placeholder").classList.toggle("extended");
