@@ -780,7 +780,8 @@ p:nth-child(1) {
         grid-template-columns: 1fr;
         height: 79vh;
         overflow-y: scroll;
-        position: absolute;
+        position: fixed;
+        bottom: 50px;
     }
 
     .desktop {
@@ -812,6 +813,8 @@ p:nth-child(1) {
         justify-content: space-between;
         width: calc(100vw - 0px);
         display: flex;
+        position: fixed;
+        bottom: 30px;
     }
 
 
@@ -894,7 +897,7 @@ p:nth-child(1) {
 
 
     .footeritem {
-        position: absolute;
+        position: fixed;
         display: inline-block;
         color: var(--main-font-color);
         -webkit-text-stroke: var(--main-font-color) 1.02px;
