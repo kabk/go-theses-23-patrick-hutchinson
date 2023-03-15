@@ -58,34 +58,28 @@ setInterval(function () {
     }
 
     if (i == 1) {
-        document.querySelector('.consoleText').innerHTML = " >ACCESSING WEBSITEs:";
+        document.querySelector('.consoleText').innerHTML = "BOOTLEGGING <br>";
     } else if (i == 2) {
-        document.querySelector('.consoleText').innerHTML += "<br> >nytimes.com";
+        document.querySelector('.consoleText').innerHTML += "RIPPING <br>";
     } else if (i == 3) {
-        document.querySelector('.consoleText').innerHTML += "<br> >zeit.de";
+        document.querySelector('.consoleText').innerHTML += "MODDING <br>";
     } else if (i == 4) {
-        document.querySelector('.consoleText').innerHTML += "<br> >nzz.ch";
+        document.querySelector('.consoleText').innerHTML += "PHREAKING <br>";
     } else if (i == 5) {
-        document.querySelector('.consoleText').textContent = ">ACCESSIG HTML... ";
+        document.querySelector('.consoleText').innerHTML = "HACKING <br>";
     } else if (i == 6) {
-        document.querySelector('.consoleText').textContent = ">LOADED <br>";
+        document.querySelector('.consoleText').innerHTML += "CRACKING <br>";
         document.querySelector('#console').classList.toggle("background");
 
     } else if (i == 7) {
-        document.querySelector('.consoleText').textContent = ">FETCHING STYLES ";
+        document.querySelector('.consoleText').innerHTML += "YANKEE THRIFTING <br>";
         document.querySelector('h1#headline').classList.toggle('background');
         document.querySelector('#console').style.zIndex = "2";
     } else if (i == 8) {
-        document.querySelector('.consoleText').textContent = ">LOADING TO .JSON ";
+        document.querySelector('.consoleText').innerHTML += "MAKESHIFTING <br>";
         document.querySelector('#console').style.transition = "0.5s";
     } else if (i == 9) {
-        document.querySelector('.consoleText').textContent = ">LOADED ";
-    } else if (i == 10) {
-        document.querySelector('.consoleText').textContent = ">APPLYING";
-    } else if (i == 11) {
-        document.querySelector('.consoleText').textContent = ">APPLIED. FINISHING";
-    } else if (i == 12) {
-        document.querySelector('.consoleText').textContent = ">COPIED AND APPLIED";
+        document.querySelector('.consoleText').innerHTML = "COPYING?";
         document.querySelector('.explainButton').style.opacity = "1";
 
         //this unlocks the scrolling lock
@@ -111,7 +105,7 @@ setInterval(function () {
             document.querySelector(".openconsole").style.height = "3vh";
         }, 3000);
     }
-}, 40);
+}, 400);
 
 
 
