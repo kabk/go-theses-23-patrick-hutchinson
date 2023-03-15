@@ -53,6 +53,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     /*    background: #0071ff;*/
     /*    background: var(--main-bg-color);*/
     background: transparent;
@@ -717,7 +718,7 @@ p:nth-child(1) {
 .questionMark {
     position: fixed;
     /*    font-size: var(--large-text-size);*/
-    color: var(--main-text-color);
+    color: var(--main-font-color);
     left: 10px;
     bottom: 10px;
     font-family: helvetica;

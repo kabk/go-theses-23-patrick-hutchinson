@@ -11,7 +11,8 @@ window.addEventListener("load", function () {
     }
 
     if (mobile) {
-        document.querySelector("#gridcontainer").style.height = `${(window.innerHeight / 100)*79}px`
+        document.querySelector("#gridcontainer").style.height = `${(window.innerHeight / 100)*79}px`;
+        document.querySelector(".text").style.height = `${(window.innerHeight / 100)*79}px`
     }
 });
 
@@ -367,7 +368,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.culturedigital").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.culturedigital").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
         document.querySelector("h1#headline").className = "";
@@ -386,12 +389,15 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.legalities").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.legalities").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
         document.querySelector("h1#headline").className = "";
         document.querySelector("h1#headline").classList.toggle(currentColor);
         document.querySelector(':root').style.setProperty('--main-font-color', '#fffffa');
+        //        document.querySelector(".chapterTitle.legalities").style.color = "var(--main-font-color) !important";
         document.querySelector('.consoleText').textContent = ">APPLIED GREY COLORING.";
     }
 
@@ -402,7 +408,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.hacking").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.hacking").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("h1#headline").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
@@ -418,7 +426,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.nonlaw").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.nonlaw").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("h1#headline").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
@@ -434,7 +444,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.labelling").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.labelling").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("h1#headline").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
@@ -450,7 +462,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.fisherprice").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.fisherprice").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("h1#headline").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
@@ -466,7 +480,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelectorAll(".chapterTitle").forEach(function (chapterTitles) {
             chapterTitles.style.color = "#bfbfbf";
         })
-        document.querySelector(".chapterTitle.reframing").style.color = currentTextColor;
+        document.querySelectorAll(".chapterTitle.reframing").forEach(function (chaptertitles) {
+            chaptertitles.style.color = currentTextColor;
+        });
         document.querySelector("#console").className = "";
         document.querySelector("h1#headline").className = "";
         document.querySelector("#console").classList.toggle(currentColor);
