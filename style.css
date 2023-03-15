@@ -118,6 +118,10 @@ a:visited {
     background: transparent;
 }
 
+.placeholder.extended {
+    height: 100vh !important;
+}
+
 #console.foreground {
     background: #000;
     /*    color: #fff;*/
@@ -221,7 +225,7 @@ h1#headline.yellow {
 h1#headline.greyred {
     opacity: 1;
     color: #D0D2CB;
-    text-shadow: #F4F4F447 0px 0px 16px;
+    text-shadow: #14141420 0px 0px 16px;
 }
 
 .explainButton {
@@ -237,7 +241,7 @@ h1#headline.greyred {
 }
 
 .explanationText {
-    display: none;
+/*    display: none;*/
     opacity: 0;
     transition-property: opacity;
     transition: 0.4s;
@@ -710,6 +714,16 @@ p:nth-child(1) {
     display: none;
 }
 
+.questionMark {
+    position: fixed;
+    /*    font-size: var(--large-text-size);*/
+    color: var(--main-text-color);
+    left: 10px;
+    bottom: 10px;
+    font-family: helvetica;
+    z-index: 10;
+}
+
 
 
 
@@ -828,6 +842,8 @@ p:nth-child(1) {
     .placeholder {
         height: 10vh;
     }
+
+
 
     .footnotes {
         font-size: 3vw;

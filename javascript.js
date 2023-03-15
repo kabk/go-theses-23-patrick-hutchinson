@@ -115,15 +115,16 @@ setInterval(function () {
 
 
 
-//    document.querySelector('.explainButton').addEventListener('click', function () {
-//
-//        document.querySelector('.explanationText').classList.toggle("visible");
-//        document.querySelector('.explanationFooter').classList.toggle("visible");
-//        document.querySelector('#console').className = "";
-//        document.querySelector('#console').classList.toggle("foreground");
-//        document.querySelector('h1#headline').className = "";
-//        document.querySelector('h1#headline').classList.toggle("foreground");
-//    });
+document.querySelector('.explainButton').addEventListener('click', function () {
+    if (!mobile) {
+        document.querySelector('.explanationText').classList.toggle("visible");
+        //        document.querySelector('.explanationFooter').classList.toggle("visible");
+        //        document.querySelector('#console').className = "";
+        //        document.querySelector('#console').classList.toggle("foreground");
+        //        document.querySelector('h1#headline').className = "";
+        //        document.querySelector('h1#headline').classList.toggle("foreground");
+    }
+});
 
 
 
@@ -381,6 +382,9 @@ document.querySelector('.text').addEventListener('scroll', function () {
         document.querySelector("h1#headline").className = "";
         document.querySelector("h1#headline").classList.toggle(currentColor);
         document.querySelector(':root').style.setProperty('--main-font-color', '#DA212C');
+        //        document.querySelector('#gridcontainer').style.opacity = 0;
+        //        document.querySelector('#console').classList = "";
+        //        document.querySelector('#console').classList.add("foreground");
         document.querySelector('.consoleText').textContent = ">APPLIED RED COLORING.";
     }
 
@@ -618,3 +622,8 @@ document.querySelectorAll(".footnoteReference").forEach(function (fullReferenceI
         }
     })
 });
+
+document.querySelector(".questionMark").addEventListener("click", function () {
+    document.querySelector(".placeholder").style.transition = "background 2s, height 0.5s";
+    document.querySelector(".placeholder").classList.toggle("extended");
+})
