@@ -604,12 +604,12 @@ p:nth-child(1) {
 
 .definitionsListItem:hover {
     color: var(--main-font-color);
-    -webkit-text-stroke: var(--main-font-color) 1.02px;
+/*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
 }
 
 .definitionsListItem.highlighted {
     color: var(--main-font-color);
-    -webkit-text-stroke: var(--main-font-color) 1.02px;
+/*    -webkit-text-stroke: var(--main-font-color) 1.02px;*/
 }
 
 .panel {
