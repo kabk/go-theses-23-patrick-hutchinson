@@ -75,7 +75,7 @@ sup {
 }
 
 a:visited {
-    color: var(--main-font-color);
+    color: #bfbfbf
 }
 
 .openconsole {
@@ -196,7 +196,7 @@ h1#headline.foreground {
 h1#headline.blue {
     opacity: 1;
     color: #1D9BF0;
-    text-shadow: #F4F4F447 0px 0px 16px;
+    text-shadow: #F4F4F460 0px 0px 16px;
 }
 
 h1#headline.red {
